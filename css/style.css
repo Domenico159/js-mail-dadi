@@ -66,3 +66,36 @@ input{
 #result{
     color: rgb(43, 147, 196);
 }
+
+
+/* Box dadi */
+
+.box-dadi{
+    width: 70%;
+    height: 400px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: rgb(175, 248, 199);
+}
+
+.box{
+    width: calc(100% / 2 - 10px);
+    margin-top: 15px;
+}
+
+.risultato{
+    width: 100%;
+}
+.point{
+    display: flex;
+    width: 100%;
+}
+
+#risultato{
+    color: rgb(43, 147, 196);
+}
+
