@@ -1,4 +1,6 @@
 
+// Esercizio 1
+
 // Funcion
 function mail() {
     var user= (document.getElementById('user').value).toLowerCase();
@@ -6,18 +8,22 @@ function mail() {
     var countMax = allUser.length;
     var userFound = false;
 
-    for (var i = 0; i < countMax; i++){
-        console.log(countMax);
-
-        if(allUser[i] === user){
-            userFound=true;
-            console.log('trovato');
+    if(isNaN(user)){
+        for (var i = 0; i < countMax; i++){
+            console.log(countMax);
+    
+            if((allUser[i] === user) && (isNaN)) {
+                userFound=true;
+                console.log('trovato');
+            }
         }
-    }
-
-    if(userFound === true){
-        document.getElementById('result').innerHTML = 'Account verificato correttamente';
+    
+        if(userFound === true){
+            document.getElementById('result').innerHTML = 'Account verificato correttamente';
+        }else{
+            document.getElementById('result').innerHTML = 'Account non trovato o non corretto , per favore riprovare.';
+        }
     }else{
-        document.getElementById('result').innerHTML = 'Account non trovato o non corretto , per favore riprovare.';
+        alert('Attenzione , caratteri non corretti , per vafore inserire un formato letterario, grazie.');
     }
 }
