@@ -24,7 +24,7 @@ function mail() {
             document.getElementById('result').innerHTML = 'Account non trovato o non corretto , per favore riprovare.';
         }
     }else{
-        alert('Attenzione , caratteri non corretti o inesistenti , per vafore inserire un formato letterario, grazie.');
+        alert('Attenzione , caratteri non corretti o inesistenti , per favore inserire un formato letterario, grazie.');
     }
 }
 
